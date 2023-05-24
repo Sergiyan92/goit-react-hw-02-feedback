@@ -36,9 +36,6 @@ export const App = () => {
     <div className={css.feedback}>
       <Section>
         <FeedbackOptions options={options} onLeaveFeedback={handleFeedback} />
-      </Section>
-
-      <Section>
         {hasFeedback ? (
           <Statistics
             className={css.list}
@@ -49,7 +46,7 @@ export const App = () => {
             positivePercentage={positivePercentage}
           />
         ) : (
-          <p className={css.notification}>There is no feedback</p>
+          <p className={css.notification}>No feedback given</p>
         )}
       </Section>
     </div>
