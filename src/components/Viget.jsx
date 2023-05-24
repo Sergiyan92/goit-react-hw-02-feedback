@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import css from './Viget.module.css';
 export const Statistics = ({
   good,
