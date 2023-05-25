@@ -4,6 +4,7 @@ import { FeedbackOptions } from './Viget';
 import { Section } from './Viget';
 import { Notification } from './Viget';
 import css from './Viget.module.css';
+
 export class App extends Component {
   state = {
     good: 0,
@@ -28,13 +29,10 @@ export class App extends Component {
 
     return (
       <div className={css.feedback}>
-        <Section>
-          <FeedbackOptions
-            options={options}
-            onLeaveFeedback={this.handleFeedback}
-          />
-        </Section>
-
+        <FeedbackOptions
+          options={options}
+          onLeaveFeedback={this.handleFeedback}
+        />
         <Section title="Statistics">
           {hasFeedback ? (
             <Statistics
