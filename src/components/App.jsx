@@ -35,7 +35,7 @@ export class App extends Component {
 
     return (
       <div className={css.feedback}>
-        <Section title="">
+        <Section>
           <FeedbackOptions
             options={options}
             onLeaveFeedback={this.handleFeedback}
