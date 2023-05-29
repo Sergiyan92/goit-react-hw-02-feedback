@@ -3,6 +3,8 @@ import { Statistics } from './Viget';
 import { FeedbackOptions } from './Viget';
 import { Section } from './Viget';
 import { Notification } from './Viget';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import css from './Viget.module.css';
 
 export class App extends Component {
@@ -35,6 +37,7 @@ export class App extends Component {
 
     return (
       <div className={css.feedback}>
+        <ToastContainer />
         <Section>
           <FeedbackOptions
             options={options}
