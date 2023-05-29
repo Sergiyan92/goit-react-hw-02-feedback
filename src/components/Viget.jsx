@@ -1,5 +1,4 @@
 import css from './Viget.module.css';
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export const Statistics = ({
